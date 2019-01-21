@@ -1,0 +1,24 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "henri server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felix-Antoine Paradis",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^1.0.1",
+    "binaryjs": "^0.2.1",
+    "next": "^4.2.0",
+    "pako": "^1.0.6",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "recordrtc": "^5.4.6",
+    "snappyjs": "^0.6.0",
+    "socket.io-stream": "^0.9.1"
+  }
+}

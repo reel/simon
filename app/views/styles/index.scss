@@ -1,0 +1,107 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$primary-color: blue;
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+#__next > div > div {
+  display: flex;
+  justify-content: center;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.main {
+  color: purple;
+  display: flex;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.button {
+  background-color: #ff0000;
+  box-shadow: 2px 2px 2px #999;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  width: 95%;
+  height: 15vh;
+  text-align: center;
+  outline: 0;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px; /* Some tweener fallback that doesn't look awful */
+  font-size: 3vw;
+  z-index: 100;
+  transition: all 0.5s;
+  cursor: pointer;
+  &.recording {
+    background-color: #37b817;
+  }
+  &:focus {
+    box-shadow: 2px 1px 2px 1px #999 inset;
+  }
+  &:hover {
+    box-shadow: 0 0 0 0 #fff;
+    outline: 0;
+  }
+}
+
+h1 {
+  // font-size: 36px; /* Some tweener fallback that doesn't look awful */
+  font-size: 7vh;
+  height: 90%;
+  overflow-y: auto;
+  margin-left: 3%;
+  letter-spacing: 2px;
+}
+.icon-microphone-slash {
+  font-size: 6vh;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 85vh;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/icomoon.eot?jnwlak');
+  src: url('/icomoon.eot?jnwlak#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?jnwlak') format('truetype'),
+    url('icomoon.woff?jnwlak') format('woff'),
+    url('icomoon.svg?jnwlak#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-microphone-slash:before {
+  content: '\e900';
+}
+.icon-microphone:before {
+  content: '\e901';
+}
